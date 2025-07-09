@@ -9,6 +9,7 @@ h1 {font-family: Calibri, Arial, sans-serif;
     text-align: center;
    border: solid 5px white;
    border-radius: 10px;
+    background-color: grey;
    }
 .button {
     background-color: grey;
