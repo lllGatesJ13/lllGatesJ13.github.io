@@ -7,7 +7,7 @@ h1 {font-family: Calibri, Arial, sans-serif;
     color: white;
     font-weight: bold;
     text-align: center;
-   border: solid 5px;
+   border: solid 5px white;
    border-radius: 10px;
    }
 .button {
