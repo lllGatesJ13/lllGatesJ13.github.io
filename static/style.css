@@ -19,4 +19,5 @@ h1 {font-family: Calibri, Arial, sans-serif;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+     text-alignment: center;
 }
