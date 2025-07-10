@@ -71,14 +71,30 @@ h1 {font-family: Calibri, Arial, sans-serif;
 }
 
 .dashboard {
-    background: rgba(40, 40, 40, 0.95);
+    background: linear-gradient(135deg, #101115 0%, #18191d 100%);
     border-radius: 18px;
-    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.35);
+    border: 2.5px solid #23242a;
+    box-shadow: 0 4px 32px 0 rgba(10,10,15,0.45);
     padding: clamp(1.5rem, 5vw, 3.5rem);
     margin: 2rem auto;
     max-width: 900px;
-    color: #f2f2f2;
+    color: #e0e0e0;
     font-size: clamp(1.1rem, 2.5vw, 1.7rem);
     text-align: center;
     word-break: break-word;
+    position: relative;
+    overflow: hidden;
+}
+.dashboard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(135deg, rgba(30,32,38,0.18) 0 2px, transparent 2px 40px);
+    opacity: 0.45;
+    z-index: 0;
+}
+.dashboard > * {
+    position: relative;
+    z-index: 1;
 }
