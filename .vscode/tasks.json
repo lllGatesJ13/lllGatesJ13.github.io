@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Start Local Web Server",
+			"command": "python3 -m http.server 8000 --directory /workspaces/lllGatesJ13.github.io",
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
