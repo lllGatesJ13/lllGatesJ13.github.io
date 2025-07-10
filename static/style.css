@@ -1,11 +1,13 @@
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #181c24 0%, #23272f 60%, #10131a 100%);
+    background: radial-gradient(ellipse at 60% 20%, rgba(40,44,55,0.18) 0%, rgba(10,10,15,0.92) 60%, #07080a 100%),
+                repeating-linear-gradient(135deg, rgba(30,32,38,0.12) 0 2px, transparent 2px 40px);
     text-align: center;
     color: #e0e0e0;
     font-family: Calibri, Arial, sans-serif;
     letter-spacing: 0.01em;
     transition: background 0.5s;
+    background-color: #07080a;
 }
 
 body, html {
@@ -43,9 +45,9 @@ h1 {font-family: Calibri, Arial, sans-serif;
     min-width: 0;
 }
 .button {
-    background: linear-gradient(90deg, #23272f 0%, #353b48 100%);
-    border: 2px solid #353b48;
-    color: #f2f2f2;
+    background: linear-gradient(90deg, #13151a 0%, #23242a 100%);
+    border: 2px solid #18191d;
+    color: #e6e6e6;
     padding: clamp(0.6rem, 3vw, 1.6rem) clamp(2rem, 7vw, 4rem);
     text-align: center;
     text-decoration: none;
@@ -55,17 +57,17 @@ h1 {font-family: Calibri, Arial, sans-serif;
     cursor: pointer;
     border-radius: 30px;
     transition: background 0.22s, box-shadow 0.22s, transform 0.13s, border 0.18s;
-    box-shadow: 0 2px 16px 0 rgba(20,20,30,0.22);
+    box-shadow: 0 2px 16px 0 rgba(10,10,15,0.32);
     font-weight: 600;
     letter-spacing: 0.03em;
     outline: none;
 }
 .button:hover, .button:focus {
-    background: linear-gradient(90deg, #353b48 0%, #23272f 100%);
-    border: 2px solid #5c6370;
+    background: linear-gradient(90deg, #23242a 0%, #13151a 100%);
+    border: 2px solid #23242a;
     color: #fff;
     transform: translateY(-2px) scale(1.045);
-    box-shadow: 0 8px 32px 0 rgba(20,20,30,0.32);
+    box-shadow: 0 8px 32px 0 rgba(10,10,15,0.42);
 }
 
 .dashboard {
