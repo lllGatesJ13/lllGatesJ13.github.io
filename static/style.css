@@ -10,6 +10,7 @@ h1 {font-family: Calibri, Arial, sans-serif;
    border: solid 5px white;
    border-radius: 10px;
     background-color: grey;
+   padding: 10px 20px;
    }
 .button {
     background-color: grey;
