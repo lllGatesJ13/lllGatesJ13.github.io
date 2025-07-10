@@ -2,8 +2,28 @@ body {background-color:black;
      text-align: center;
      }
 
+body, html {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Prevent side-by-side stacking unless explicitly set */
+.no-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+a.button {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1 {font-family: Calibri, Arial, sans-serif;
-    font-size: 50px;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     color: white;
     font-weight: bold;
     text-align: center;
@@ -20,12 +40,32 @@ h1 {font-family: Calibri, Arial, sans-serif;
     background-color: grey;
     border: none;
     color: white;
-    padding: 20px 50px;
+    padding: clamp(0.5rem, 3vw, 1.5rem) clamp(1.5rem, 7vw, 3.5rem);
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 25px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.18);
+}
+.button:hover {
+    background: linear-gradient(90deg, #555 0%, #888 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px 0 rgba(0,0,0,0.28);
+}
+
+.dashboard {
+    background: rgba(40, 40, 40, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.35);
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+    margin: 2rem auto;
+    max-width: 900px;
+    color: #f2f2f2;
+    font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+    text-align: left;
+    word-break: break-word;
 }
